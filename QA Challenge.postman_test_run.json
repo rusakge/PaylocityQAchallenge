@@ -1,0 +1,137 @@
+{
+	"id": "4881bd8e-10c3-42ea-b1c5-345c6d09310d",
+	"name": "QA Challenge",
+	"timestamp": "2021-01-05T04:03:44.282Z",
+	"collection_id": "f172f87b-5f44-48ca-9a59-298531cde633",
+	"folder_id": 0,
+	"environment_id": "677e876f-a5f5-486d-94b0-7bbc3c2b9c53",
+	"totalPass": 1,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "2e7d01c1-a4ee-4ce3-8144-d47d3d498833",
+			"name": "Get Employee List",
+			"url": "https://wmxrwq14uc.execute-api.us-east-1.amazonaws.com/Prod/api/employees?Authorization;=Basic%20%3CauthToken%3E",
+			"time": 309,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				309
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "d18f7f5c-7458-4e87-903f-4539130026bc",
+			"name": "Add Employee",
+			"url": "https://wmxrwq14uc.execute-api.us-east-1.amazonaws.com/Prod/api/employees",
+			"time": 212,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				212
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "267bbcf9-abc5-45a7-b8b3-c7af0d4d2adc",
+			"name": "Get Employee",
+			"url": "https://wmxrwq14uc.execute-api.us-east-1.amazonaws.com/Prod/api/employees/ecba7062-d9f2-4d79-a048-d7318406df42",
+			"time": 187,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				187
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "8de3dbf8-aca9-410e-8a91-0ebd5f43a6c3",
+			"name": "Update Employee",
+			"url": "https://wmxrwq14uc.execute-api.us-east-1.amazonaws.com/Prod/api/employees",
+			"time": 214,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				214
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "efa07364-f196-4e6f-be9d-6a96a8eb225b",
+			"name": "Delete Employee",
+			"url": "https://wmxrwq14uc.execute-api.us-east-1.amazonaws.com/Prod/api/employees/ecba7062-d9f2-4d79-a048-d7318406df42",
+			"time": 146,
+			"responseCode": {
+				"code": 500,
+				"name": "Internal Server Error"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				146
+			],
+			"allTests": [
+				{}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 1068,
+	"collection": {
+		"requests": [
+			{
+				"id": "2e7d01c1-a4ee-4ce3-8144-d47d3d498833",
+				"method": "GET"
+			},
+			{
+				"id": "d18f7f5c-7458-4e87-903f-4539130026bc",
+				"method": "POST"
+			},
+			{
+				"id": "267bbcf9-abc5-45a7-b8b3-c7af0d4d2adc",
+				"method": "GET"
+			},
+			{
+				"id": "8de3dbf8-aca9-410e-8a91-0ebd5f43a6c3",
+				"method": "PUT"
+			},
+			{
+				"id": "efa07364-f196-4e6f-be9d-6a96a8eb225b",
+				"method": "DELETE"
+			}
+		]
+	}
+}
